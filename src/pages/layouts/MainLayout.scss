@@ -1,0 +1,9 @@
+.root {
+    @apply h-screen flex items-center justify-center;
+    
+    .wrapper {
+        width: 320px;
+        height: 520px;
+        @apply relative;
+    }
+}

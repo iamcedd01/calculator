@@ -1,0 +1,57 @@
+.root {
+    width: 320px;
+    box-shadow: 0px 0px 20px 0px #aaa;
+    @apply flex flex-col bg-general h-full relative overflow-hidden;
+
+    .keypad {
+        @apply flex;
+        height: 400px;
+
+        .inputs {
+            width: 240px;
+            @apply w-full;
+
+            .functions {
+                @apply flex;
+                background: linear-gradient(to bottom, rgba(202, 202, 204, 1) 0%, rgba(196, 194, 204, 1) 100%);
+
+                .key {
+                    font-size: 2em;
+
+                    .multiply {
+                        line-height: 50px;
+                    }
+                }
+            }
+
+            .digits {
+                @apply bg-light flex flex-row flex-wrap-reverse;
+
+                .key {
+                    font-size: 2.25em;
+                }
+
+                .zero {
+                    width: 160px;
+                    text-align: left;
+                    padding-left: 32px;
+                }
+
+                .dot {
+                    padding-top: 1em;
+                    font-size: 0.75em;
+                }
+            }
+        }
+
+        .operators {
+            background: linear-gradient(to bottom, rgba(252, 156, 23, 1) 0%, rgba(247, 126, 27, 1) 100%);
+
+            .key {
+                color: white;
+                border-right: 0;
+                font-size: 3em;
+            }
+        }
+    }
+}
